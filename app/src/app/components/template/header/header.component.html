@@ -1,0 +1,23 @@
+<header class="navbar" [ngClass]="{'navbar-fixed': isFixedNavbar}">
+  <div class="container" fxLayout="row wrap" fxLayoutAlign="start center">
+    <div class="navbar-mobile-top" fxLayout="row" fxLayoutWrap="wrap" fxLayoutAlign="start center">
+      <div class="navbar-logo">
+        <img src="assets/img/logo_003.png" alt="logo" width="110px">
+      </div>
+      <button mat-icon-button color="accent" class="navbar-toggle" (click)="toggleNavbar()">
+        <mat-icon>{{!navbarOpened ? 'menu': 'close'}}</mat-icon>
+      </button>
+    </div>
+    <div fxFlex class="top-navbar">
+      <span fxFlex></span>
+      <div class=itens-alings>
+        <a mat-button class="navbartop-btn">Inicio</a>
+        <a mat-button class="navbartop-btn">Sobre</a>
+        <a mat-button class="navbartop-btn">Serviços</a>
+        <a mat-button class="navbartop-btn">Planos</a>
+        <a mat-button class="navbartop-btn">Blog</a>
+        <a mat-button class="navbartop-btn">Contato</a>
+      </div>
+    </div>
+  </div>
+</header>
