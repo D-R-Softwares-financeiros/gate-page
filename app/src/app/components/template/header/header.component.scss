@@ -6,24 +6,27 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 25px 0;
+  padding: 30px 0;
+  border-radius: 0;
   transition: padding 0.3s linear;
   -webkit-transition: padding 0.3s linear;
   z-index: 999;
 }
 
 .navbar-logo{
-  width: 10px;
+  width: 30px;
   height: 10px;
 }
 
 .itens-alings{
   display: inline-block;
   margin-left: 320px;
+
+
 }
 .navbartop-btn{
   margin-left: 40px;
-
+  margin: 0 25px;
 
 }
 .navbar > .container {
@@ -43,7 +46,10 @@
   right: 0;
   top: 0;
   padding: 0 !important;
-  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+  z-index: 99;
+  width: 100%;
+  transition: background .4s , all .3s linear;;
+  background-color:#3BACF0;
   animation: .6s slideDown forwards;
 }
 .navbar-fixed .container {
@@ -81,8 +87,11 @@
       height: 60px;
       padding: 0;
   }
-  .navbar-opened:host .navbar-mobile-top {
+  .navbar-opened:host .navbar-mobile-top .navbartop-btn{
+    margin-left: 40px;
+    margin-bottom: 50px;
     padding: 13px 0;
+    display: block;
   }
  .navbar-toggle {
       display: block !important;
@@ -95,6 +104,7 @@
       margin-left: 15px;
   }
   .top-navbar {
+    margin: 0 50px;
       display: none !important;
   }
   .navbar-opened:host {
