@@ -1,4 +1,10 @@
-@media  ( max-width: 1199px  )
+html, body
+  width: 100%
+  height: 100%
+
+
+
+@media  ( max-width: 992px  )
   .home-banner-area
   .banner-inner
     width: 100px 0
@@ -42,7 +48,7 @@ body
   font-weight: normal
 
 .home-left-img
-  padding-top: 230px
+  padding-top: 150px
   padding-bottom: 230px
 
 .img-fluid
@@ -76,11 +82,7 @@ img
 
 h2
   display: inline-block
-  margin-block-start: 0.83em
-  margin-block-end: 0.83em
-  margin-inline-start: 0px
-  margin-inline-end: 0px
-  font-size: 36px
+
 
 .banner-btn
   display: inline-block
@@ -101,8 +103,7 @@ h2
   margin: 0 10px
   transition: all 300ms linear 0s
 
-.space-btn
-  margin: 0 15px
+
 
 .banner-btn2
   display: inline-block
@@ -122,7 +123,7 @@ h2
   cursor: pointer
   transition: all 300ms linear 0s
 
-@media  ( min-width: 992px)
+@media  ( min-width: 990px)
 .col-lg-1
   position: relative
   min-height: 1px
@@ -134,10 +135,6 @@ h2
   min-height: 1px
   padding-right: 15px
   padding-left: 15px
-
-@media ( min-width: 992px )
-.container2
-  max-width: 960px
 
 .container2
   padding-right: 10px
@@ -155,8 +152,8 @@ h2
     font-weight: bold
     margin-bottom: 15px
     text-transform: uppercase
-    margin-left: 150px
-    width: 100%
+    margin-left: 320px
+
 
   p
     font-size: 14px
@@ -171,11 +168,10 @@ h2
   flex: 0 0 33.333333%
   max-width: 33.333333%
   display: inline-block
-  width: 100%
   min-height: 1px
   padding-right: 15px
   padding-left: 15px
-  margin: 0 0 50px
+  margin: 0
 
 .work_inner
   margin-bottom: -50px
@@ -202,9 +198,7 @@ i
   margin-bottom: 15px
   margin: 0 0 15px
   text-decoration: none
-.work_item p
-  max-width: 310px
-  margin: auto
+
 .work_item i
   background-image: -moz-linear-gradient(0deg, #4dabff 0%, #62ddff 100%)
   background-image: -webkit-linear-gradient(0deg, #4dabff 0%, #62ddff 100%)
@@ -217,3 +211,43 @@ i
 i:hover
   background: rgb(31,22,176)
   background: linear-gradient(90deg, rgba(31,22,176,1) 0%, rgba(6,152,163,1) 0%, rgba(2,180,220,1) 0%, rgba(81,184,231,1) 93%)
+
+@media ( max-width: 990px )
+  div
+    display: block
+  .work-item
+    text-align: center
+    margin-bottom: 50px
+  img
+    display: none
+  .col-lg-1
+    width: auto
+    margin-top: 160px
+    align-items: center
+  .container2
+    max-width: 720px
+
+
+
+
+
+@media ( max-width: 480px )
+  img
+    display: none
+  .col-lg-1
+    width: 430px
+    margin-top: 160px
+    align-items: center
+    margin-bottom: 50px
+  .banner-btn
+    display: block
+    margin-bottom: 20px
+    margin-right: 15px
+
+
+
+
+
+
+
+
