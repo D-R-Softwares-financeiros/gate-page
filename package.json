@@ -6,6 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "build:prod": "ng build --configuration production --base-href https://d-r-softwares-financeiros.github.io/gate-page/app/",
+    "test:headless": "ng test --watch=false --browsers=ChromeHeadless",
     "test": "ng test",
     "lint": "ng lint"
   },
