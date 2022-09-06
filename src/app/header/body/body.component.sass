@@ -1,0 +1,134 @@
+html, body
+  width: 100%
+  height: 100%
+
+*, ::after, ::before
+  box-sizing: border-box
+.col-lg-5
+  display: inline-block
+  flex: 0 0 50%
+  max-width: 50%
+  padding: 0 15px
+  position: relative
+  min-height: 1px
+  padding-right: 35px
+  padding-left: 50px
+
+h3
+  font-size: 36px
+  font-family: "Heebo" ,sans-serif
+  color: #222
+  font-weight: bold
+  margin-bottom: 20px
+
+h6
+  font-size: 16px
+  font-family: Roboto, sans-serif
+  color: #222222
+  margin: 0px 0px 8px
+  font-weight: 500
+
+p
+  margin-top: 0
+  color: #777
+
+.img-fluid
+  max-width: 580px
+  height: auto
+  margin-bottom: 80px
+
+img
+  vertical-align: middle
+  border-style: none
+
+.main-btn
+  margin-top: 35px
+  display: inline-block
+  background-image: linear-gradient(to right,#4dabff 0%,#62ddff 48%,#4dabff 100%)
+  background-size: 200% auto
+  padding: 0 35px
+  color: #fff
+  font-family: "Roboto",sans-serif
+  font-size: 13px
+  font-weight: 500
+  line-height: 50px
+  border-radius: 5px
+  outline: none!important
+  box-shadow: none!important
+  text-align: center
+  cursor: pointer
+  transition: all 300ms linear 0s
+
+.main-btn:hover
+  background-position: right
+
+.row
+  padding-top: 120px
+  padding-bottom: 120px
+  flex-flow: row wrap
+  width: 100%
+  background: #EDF6FF
+
+@media  ( max-width: 480px  )
+  .row
+    width: 460px
+    padding-top: 70px
+    padding-bottom: 0
+
+  .col-lg-5
+    text-align: center
+    width: auto
+    display: block
+    margin-bottom: 70px
+
+  .main-btn
+    margin-bottom: 20px
+    margin-right: 50px
+    display: none
+  h3
+    text-align: start
+    width: 450px
+    height: auto
+    font-size: 36px
+    margin-right: 20px
+    line-height: 45px
+  h6
+    text-align: start
+    width: 450px
+    height: auto
+    font-size: 16px
+    margin: 0 0 8px
+
+  p
+    width: 420px
+    height: auto
+    text-align: start
+    font-size: 14px
+    color: #777
+
+  .main-btn
+    width: 170px
+    margin-top: 35px
+    display: inline-block
+    background-image: linear-gradient(to right,#4dabff 0%,#62ddff 48%,#4dabff 100%)
+    background-size: 200% auto
+    padding: 0 35px
+    color: #fff
+    font-family: "Roboto",sans-serif
+    font-size: 13px
+    font-weight: 500
+    line-height: 50px
+    border-radius: 5px
+    outline: none!important
+    box-shadow: none!important
+    text-align: center
+    cursor: pointer
+    transition: all 300ms linear 0s
+
+  .main-btn:hover
+    background-position: right
+
+  .img-fluid
+    width: 400px
+    height: 280
+    display: block
