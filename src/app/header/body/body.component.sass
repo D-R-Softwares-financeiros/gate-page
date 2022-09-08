@@ -70,16 +70,24 @@ img
   background: #EDF6FF
 
 @media  ( max-width: 480px  )
+  .img-fluid
+    max-width: 400px
+    height: auto
   .row
-    width: 460px
+    width: auto
     padding-top: 70px
     padding-bottom: 0
+  .banner-content
+    max-width: 300px
 
   .col-lg-5
     text-align: center
-    width: auto
-    display: block
+    max-width: 460px
     margin-bottom: 70px
+    vertical-align: middle
+    align-self: center
+    padding-right: 15px
+    padding-left: 15px
 
   .main-btn
     margin-bottom: 20px
@@ -87,20 +95,21 @@ img
     display: none
   h3
     text-align: start
-    width: 450px
+    width: auto
     height: auto
     font-size: 36px
-    margin-right: 20px
+    margin: auto
     line-height: 45px
+    margin: 0 0 20px
   h6
     text-align: start
-    width: 450px
+    width: auto
     height: auto
     font-size: 16px
     margin: 0 0 8px
 
   p
-    width: 420px
+
     height: auto
     text-align: start
     font-size: 14px
@@ -128,7 +137,5 @@ img
   .main-btn:hover
     background-position: right
 
-  .img-fluid
-    width: 400px
-    height: 280
-    display: block
+
+
