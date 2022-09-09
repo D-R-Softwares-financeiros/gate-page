@@ -13,11 +13,10 @@ import { MatListModule } from '@angular/material/list';
 import { HeaderComponent } from './app/header/header.component';
 import { BodyComponent } from './app/body/body.component';
 import { PriceComponent } from './app/price/price.component';
-import { FeedComponent } from './app/feed/feed.component';
 import { FooterComponent } from './app/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, BodyComponent, PriceComponent, FeedComponent, FooterComponent],
+  declarations: [AppComponent, HeaderComponent, BodyComponent, PriceComponent, FooterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
