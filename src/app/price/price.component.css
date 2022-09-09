@@ -40,6 +40,11 @@ body::after {
 	z-index: -1;
 }
 
+.p_120{
+  padding-top: 120px;
+  padding-bottom:120;
+}
+
 .container {
 	margin: auto;
 	max-width: 100%;
@@ -199,11 +204,57 @@ h1 {
 		flex-direction: column;
 	}
 
+  body{
+    max-height: auto;
+  }
+
 	.price-box.price-box-premium {
 		transform: scale(1);
+
 	}
 
 	.price-box.price-box-premium > * {
 		transform: scale(1);
 	}
 }
+
+@media screen and (max-width: 480px){
+  body{
+    position: relative;
+  }
+
+  .p_120{
+    margin-top: 120px;
+  }
+
+
+  .container{
+    background-color: #fff;
+    display: block;
+      max-width: 460px;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  .main-tittle{
+    margin-top: 70px;
+  }
+
+  .flex {
+    max-width: 150px;
+    height: auto;
+
+  }
+  .price-box{
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  price-box.price-box-premium {
+		max-width: 200px;
+
+
+}
+}
+
