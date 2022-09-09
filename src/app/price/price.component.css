@@ -50,6 +50,18 @@ body::after {
 	max-width: 100%;
 	width: 1200px;
 }
+.container2{
+  margin: auto;
+	max-width: 100%;
+	width: 1200px;
+}
+.testimonial{
+  position: absolute;
+}
+.testimonial p{
+  color: #777777;
+}
+
 
 .flex {
 	display: flex;
@@ -218,6 +230,8 @@ h1 {
 	}
 }
 
+
+
 @media screen and (max-width: 480px){
   body{
     position: relative;
@@ -227,28 +241,54 @@ h1 {
     margin-top: 120px;
   }
 
+  .toggle-container{
+    display: block;
+  }
+
+
+
+
 
   .container{
     background-color: #fff;
-    display: block;
-      max-width: 460px;
-      padding-right: 15px;
-      padding-left: 15px;
-      margin-right: auto;
-      margin-left: auto;
+    width: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+  .container2{
+    display: inline;
   }
-  .main-tittle{
+
+  .testimonial h2{
+    text-align: center;
+  }
+  .testimonial p{
+    text-align: center;
+  }
+
+
+  .main-tittle2{
     margin-top: 70px;
+    display: block;
+
   }
 
   .flex {
     max-width: 150px;
     height: auto;
+    display: inline-flex;
+
 
   }
   .price-box{
     max-width: 300px;
-    max-height: 300px;
+    max-height: 350px;
   }
 
   price-box.price-box-premium {
@@ -257,4 +297,75 @@ h1 {
 
 }
 }
+.container{
+  padding: 30px 0px;
+  display: flex;
+}
+.footer_area{
+  background: #000410;
+}
+.col-lg-1{
+  display: inline-block;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 15px;
+  position: relative;
+  min-height: 1px;
+  padding-right: 35px;
+  padding-left: 50px;
+}
+.f_title {
+  margin-bottom: 35px;
+}
+.f_title h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+  .f_title p {
+    color: #fff;
+  }
+
+.f_title p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 30px;
+  color: #777777;
+  max-width: 400px;
+
+}
+.news_widget{
+  padding-left: 15px;
+}
+
+
+.list li{
+
+    margin-right: 17px;
+    display: inline-block;
+}
+.list a {
+      color: #777777;
+      font-size: 14px;
+}
+.copy_right_text{
+  text-align: center;
+  margin-top: 60px;
+}
+@media ( max-width: 480px  ){
+  .container{
+    max-width:460px;
+  }
+  .testimonial{
+    padding-bottom: 120px;
+    display: contents;
+  }
+  .testimonial h2{
+    text-align: center;
+  }
+}
+
+
+
 
