@@ -522,6 +522,9 @@ h2{
 }
 .media{
   box-shadow: 0px 10px 30px 0px rgba(58, 56, 56, 0.2);
+  max-width: 440px;
+  max-height: 320px;
+
 }
 
 
