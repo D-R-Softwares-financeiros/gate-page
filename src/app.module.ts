@@ -5,15 +5,17 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
-import { HeaderComponent } from './app/header/header.component';
-import { BodyComponent } from './app/body/body.component';
-import { PriceComponent } from './app/price/price.component';
-import { FooterComponent } from './app/footer/footer.component';
+import { HeaderComponent } from './Gates/header/header.component';
+import { AppComponent } from './app.component';
+import { BodyComponent } from './Gates/body/body.component';
+import { PriceComponent } from './Gates/price/price.component';
+import { FooterComponent } from './Gates/footer/footer.component';
+
+
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, BodyComponent, PriceComponent, FooterComponent],
