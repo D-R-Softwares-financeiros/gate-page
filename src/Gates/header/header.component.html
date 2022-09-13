@@ -4,16 +4,16 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
-    <mat-nav-list>
+    <nav>
 
-      <a mat-list-item href="#">Inicio</a>
-      <a mat-list-item href="#">Sobre</a>
-      <a mat-list-item href="#">Serviços</a>
-      <a mat-list-item href="#">Planos</a>
-      <a mat-list-item href="#">Blog</a>
-      <a mat-list-item href="#">Contato</a>
+      <a (click)="toHome" routerLink="/home" routerLinkActive="active">Inicio</a>
+      <a >Sobre</a>
+      <a >Serviços</a>
+      <a (click)="toPrice" routerLink="/price" routerLinkActive="active">Planos</a>
+      <a >Blog</a>
+      <a >Contato</a>
 
-    </mat-nav-list>
+    </nav>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
@@ -26,14 +26,17 @@
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
         <img src="https://d-r-softwares-financeiros.github.io/gate-page/assets/img/gateslogo.svg">
-      <span class="spacer1">
-      <span class="spacer">Inicio</span>
-      <span class="spacer">Sobre</span>
-      <span class="spacer">Serviços</span>
-      <span class="spacer">Planos</span>
-      <span class="spacer">Blog</span>
-      <span class="spacer">Contato</span>
-    </span>
+
+        <ul class="spacer1">
+        <li (click)="toHome()" routerLink="/home" routerLinkActive="active"> INICIO</li>
+        <li (click)="toAbout()" routerLink="/about" routerLinkActive="active"> SOBRE</li>
+        <li (click)="toService()" routerLink="/home" routerLinkActive="active"> SERVIÇOS</li>
+        <li (click)="toPrice()" routerLink="/price" routerLinkActive="active"> PLANOS</li>
+        <li (click)="toHome()" routerLink="/home" routerLinkActive="active"> BLOG</li>
+        <li (click)="toContact()" routerLink="/contact" routerLinkActive="active"> CONTATO</li>
+
+    </ul>
+
     </mat-toolbar>
 
 
