@@ -1,33 +1,36 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
-    <nav>
+  <mat-sidenav #drawer class="sidenav" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-toolbar>
+    <mat-nav-list>
+      <mat-list-item (click)="isExpanded = !isExpanded">
 
-      <a (click)="toHome" routerLink="/home" routerLinkActive="active">Inicio</a>
-      <a >Sobre</a>
-      <a >Serviços</a>
-      <a (click)="toPrice" routerLink="/price" routerLinkActive="active">Planos</a>
-      <a >Blog</a>
-      <a >Contato</a>
+      </mat-list-item>
+      <mat-list-item [routerLink]="'Gates/home'">
+        <span *ngIf="isExpanded" class="menu-item">Inicio</span>
+      </mat-list-item>
+      <mat-list-item (click)="toHome()" routerLink="/home" routerLinkActive="active">Inicio</mat-list-item>
+      <mat-list-item (click)="toAbout()" routerLink="/about" routerLinkActive="active">Sobre</mat-list-item>
+      <mat-list-item (click)="toService()" routerLink="/home" routerLinkActive="active">Serviços</mat-list-item>
+      <mat-list-item (click)="toPrice()" routerLink="/price" routerLinkActive="active">Planos</mat-list-item>
+      <mat-list-item (click)="toHome()" routerLink="/home" routerLinkActive="active" >Blog</mat-list-item>
+      <mat-list-item (click)="toContact()" routerLink="/contact" routerLinkActive="active" >Contato</mat-list-item>
+    </mat-nav-list>
 
-    </nav>
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-        <img src="https://d-r-softwares-financeiros.github.io/gate-page/assets/img/gateslogo.svg">
+      <img src="https://d-r-softwares-financeiros.github.io/gate-page/assets/img/gateslogo.svg">
 
-        <ul class="spacer1">
+      <ul class="spacer1">
         <li (click)="toHome()" routerLink="/home" routerLinkActive="active"> INICIO</li>
         <li (click)="toAbout()" routerLink="/about" routerLinkActive="active"> SOBRE</li>
         <li (click)="toService()" routerLink="/home" routerLinkActive="active"> SERVIÇOS</li>
@@ -35,7 +38,7 @@
         <li (click)="toHome()" routerLink="/home" routerLinkActive="active"> BLOG</li>
         <li (click)="toContact()" routerLink="/contact" routerLinkActive="active"> CONTATO</li>
 
-    </ul>
+      </ul>
 
     </mat-toolbar>
 
