@@ -1,0 +1,53 @@
+.sidenav-container
+  width: 100%
+
+mat-toolbar
+  height: 100px
+  position: fixed
+.spacer1
+  width: 100%
+  text-align: end
+  margin-right: 50px
+  display: flex
+  justify-content: flex-end
+li
+  list-style-type: none
+  font: 500 12px/100px"Roboto",sans-serif
+  text-transform: uppercase
+  color: #fff
+  padding: 0
+  display: inline-block
+  padding: 20px
+
+nav a.active
+  color: #222
+.spacer
+  padding-left: 50px
+
+  font-size: 12px
+  font-family: "Roboto", sans-serif
+  color: #fff
+
+img
+  width: 150px
+  height: auto
+  margin-left: 5px
+
+.sidenav
+  width: 200px
+  box-shadow: 3px 0 6px rgba(0, 0,0 ,.24 )
+
+@media  ( min-width: 768px )
+  .sidenav
+    display: none
+
+@media ( max-width: 990px )
+  .sidenav
+    display: flex
+  span
+    display: none
+  mat-toolbar
+    height: 100px
+    position: fixed
+  .spacer1
+    margin-left: 200px

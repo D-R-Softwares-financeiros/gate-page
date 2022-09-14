@@ -6,7 +6,7 @@ html, body
   box-sizing: border-box
 .col-lg-1
   min-height: 1px
-  padding-right: 55px
+  padding-right: 35px
   padding-left: 35px
   vertical-align: middle
   align-self: center
@@ -16,14 +16,10 @@ html, body
   margin-left: 40px
 
 p
-  display: block
-  margin-block-start: 1em
-  margin-block-end: 1em
-  margin-inline-start: 0px
-  margin-inline-end: 0px
-  margin: 0 0 35px
-  margin-bottom: 20px
-
+  font-size: 14px
+  width: 400px
+  line-height: 1.8
+  padding: 0px
 .col-lg-2
   min-height: 1px
   padding-right: 55px
@@ -75,6 +71,7 @@ img
 h2
   display: inline-block
   font-family: Heebo ,sans-serif
+  font-weight: bold
 
 .banner-btn
   display: inline-block
@@ -193,7 +190,7 @@ i
   background-image: -webkit-linear-gradient(0deg, #4dabff 0%, #62ddff 100%)
   background-image: -ms-linear-gradient(0deg, #4dabff 0%, #62ddff 100%)
   box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1)
-  color: #fff
+
 .work_item:hover h4
   color: #54BBFF
 
@@ -208,8 +205,8 @@ i:hover
   .banner-content
     text-align: center
   p
-    text-align: center
-    width: 800px
+    text-align: start
+    max-width: 800px
     margin: 0px 0px 0px
     padding-left: 10px
   a
@@ -217,7 +214,7 @@ i:hover
 
   .align-btn
     width: auto
-    text-align: center
+    text-align: start
     margin-top: 30px
 
   .work-item
@@ -258,19 +255,34 @@ i:hover
   .col-lg-1
     width: auto
     margin-top: 160px
-    align-items: center
+
     margin-bottom: 50px
 
+  .work-item
+    display: block
+    margin-bottom: 50px
+    h2
+      margin-left: 0
+      padding: 15px
+      line-height: normal
+
+  .banner-content
+    text-align: start
+    padding: 0px 0px
+    margin-top: 0
     p
+      font-size: 14px
       width: auto
-      text-align: center
-      padding-right: 50px
+      line-height: 1.8
+      padding: 0px
+
   .banner-btn
     margin-bottom: 20px
     margin-right: 50px
     display: none
   .btn-align
     padding-right: 50px
+    align-items: start
   .container
     width: auto
 
@@ -288,6 +300,7 @@ i:hover
       padding: auto
     h2
       width: auto
+      line-height: 1.6
       font-size: 25px
       margin: auto
       text-align: center
@@ -298,9 +311,8 @@ i:hover
       display: block
       max-width: 400px
 
-
   .img-fluid
-    max-width: 200px
+    max-width: 300px
     height: auto
   i
     height: 80px
@@ -327,7 +339,7 @@ i:hover
     background-image: -webkit-linear-gradient(0deg, #4dabff 0%, #62ddff 100%)
     background-image: -ms-linear-gradient(0deg, #4dabff 0%, #62ddff 100%)
     box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1)
-    color: #fff
+
   .work_item:hover h4
     color: #54BBFF
 
