@@ -11,9 +11,12 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { HeaderComponent } from './app/header/header.component';
+import { BodyComponent } from './app/body/body.component';
+import { PriceComponent } from './app/price/price.component';
+import { FooterComponent } from './app/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent],
+  declarations: [AppComponent, HeaderComponent, BodyComponent, PriceComponent, FooterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

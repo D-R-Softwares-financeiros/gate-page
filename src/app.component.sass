@@ -2,12 +2,6 @@ html, body
   width: 100%
   height: 100%
 
-
-
-@media  ( max-width: 992px  )
-  .banner-inner
-    width: 100px 0
-
 *, ::after, ::before
   box-sizing: border-box
 .col-lg-1
@@ -50,7 +44,7 @@ body
   padding-bottom: 230px
 
 .img-fluid
-  max-width: 580px
+  max-width: 600px
   height: auto
 
 img
@@ -80,7 +74,7 @@ img
 
 h2
   display: inline-block
-
+  font-family: Heebo ,sans-serif
 
 .banner-btn
   display: inline-block
@@ -100,8 +94,6 @@ h2
   cursor: pointer
   margin: 0 10px
   transition: all 300ms linear 0s
-
-
 
 .banner-btn2
   display: inline-block
@@ -143,6 +135,7 @@ h2
 .main-title
   margin-bottom: 75px
   color: #222222
+  text-align: center
   h2
     font-family: "Heebo",sans-serif
     font-size: 36px
@@ -150,8 +143,6 @@ h2
     font-weight: bold
     margin-bottom: 15px
     text-transform: uppercase
-    margin-left: 320px
-
 
   p
     font-size: 14px
@@ -159,7 +150,7 @@ h2
     line-height: 24px
     color: #777
     margin-bottom: 0
-    max-width: 570px
+    width: auto
     margin: auto
 
 .col-lg-4
@@ -169,7 +160,7 @@ h2
   min-height: 1px
   padding-right: 15px
   padding-left: 15px
-  margin: 0
+  margin: auto
 
 .work_inner
   margin-bottom: -50px
@@ -211,41 +202,135 @@ i:hover
   background: linear-gradient(90deg, rgba(31,22,176,1) 0%, rgba(6,152,163,1) 0%, rgba(2,180,220,1) 0%, rgba(81,184,231,1) 93%)
 
 @media ( max-width: 990px )
+
   div
     display: block
-  .work-item
+  .banner-content
     text-align: center
-    margin-bottom: 50px
-  img
+  p
+    text-align: center
+    width: 800px
+    margin: 0px 0px 0px
+    padding-left: 10px
+  a
     display: none
-  .col-lg-1
+
+  .align-btn
     width: auto
+    text-align: center
+    margin-top: 30px
+
+  .work-item
+    display: block
+    margin-bottom: 50px
+    h2
+      margin-left: 0
+      padding: 15px
+  .home-left-img
+    display: none
+  .row
+    width: auto
+  .col-lg-1
+    width: 920px
     margin-top: 160px
     align-items: center
   .container2
     max-width: 720px
-
-
-
-
+  .img-fluid
+    max-width: 580px
+    height: auto
+  .col-lg-4
+    display: block
+    text-align: center
+    width: auto
+  .work_item
+    text-align: center
+    p
+      width: auto
+      margin: auto
 
 @media ( max-width: 480px )
-  img
-    display: none
+  .row
+    width: auto
+  .container2
+    width: auto
+
   .col-lg-1
-    width: 430px
+    width: auto
     margin-top: 160px
     align-items: center
     margin-bottom: 50px
+
+    p
+      width: auto
+      text-align: center
+      padding-right: 50px
   .banner-btn
-    display: block
     margin-bottom: 20px
-    margin-right: 15px
+    margin-right: 50px
+    display: none
+  .btn-align
+    padding-right: 50px
+  .container
+    width: auto
+
+  .work-item
+    width: auto
+    text-align: center
+    display: block
+  .work_inner
+    text-align: center
+    width: auto
+    align-items: center
+    .work_item
+      text-align: center
+    .main-title
+      padding: auto
+    h2
+      width: auto
+      font-size: 25px
+      margin: auto
+      text-align: center
+    p
+      width: 310px
+      text-align: center
+    .col-lg-4
+      display: block
+      max-width: 400px
 
 
+  .img-fluid
+    max-width: 200px
+    height: auto
+  i
+    height: 80px
+    width: 80px
+    border: 1px solid #eeeeee
+    border-radius: 5px
+    background: #f9f9ff
+    display: inline-block
+    text-align: center
+    line-height: 80px
+    font-size: 30px
+    color: #222222
+    margin-bottom: 30px
 
+  .work_item h4
+    color: #222222
+    font-size: 20px
+    margin-bottom: 15px
+    margin: 0 0 15px
+    text-decoration: none
 
+  .work_item i
+    background-image: -moz-linear-gradient(0deg, #4dabff 0%, #62ddff 100%)
+    background-image: -webkit-linear-gradient(0deg, #4dabff 0%, #62ddff 100%)
+    background-image: -ms-linear-gradient(0deg, #4dabff 0%, #62ddff 100%)
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1)
+    color: #fff
+  .work_item:hover h4
+    color: #54BBFF
 
-
-
-
+  i:hover
+    background: rgb(31,22,176)
+    background: linear-gradient(90deg, rgba(31,22,176,1) 0%, rgba(6,152,163,1) 0%, rgba(2,180,220,1) 0%, rgba(81,184,231,1) 93%)

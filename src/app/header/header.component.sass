@@ -1,18 +1,18 @@
 .sidenav-container
   width: 100%
 
-
 mat-toolbar
   height: 100px
   position: fixed
 .spacer1
- margin-left: 200px
+  width: 100%
+  text-align: end
+  margin-right: 50px
 
 
 .spacer
-  flex: 1 1 auto
-  text-align: center
-  padding-left:  50px
+  padding-left: 50px
+
   font-size: 12px
   font-family: "Roboto", sans-serif
   color: #fff
@@ -31,11 +31,12 @@ img
     display: none
 
 @media ( max-width: 990px )
+  .sidenav
+    display: flex
   span
     display: none
-
-
-
-
-
-
+  mat-toolbar
+    height: 100px
+    position: fixed
+  .spacer1
+    margin-left: 200px
