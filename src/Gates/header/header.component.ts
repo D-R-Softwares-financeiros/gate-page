@@ -11,6 +11,7 @@ import { AppComponent } from '../../app.component';
 })
 export class HeaderComponent {
 
+  isExpanded: boolean = false;
 
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
